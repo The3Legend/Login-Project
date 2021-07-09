@@ -1,10 +1,10 @@
-import axios from "axios";
+import axios from '../plagins/axios'
 import API_ENW from "../config/api.config";
 
 export async function login(email, password) {
   try {
     const response = await axios.post(
-      `${API_ENW.apiUrl}/auth/login`,
+      '/auth/login',
       JSON.stringify({ email, password }),
       {
         headers: {

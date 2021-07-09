@@ -1,5 +1,4 @@
 import axios from "axios";
-import { application, json } from "express";
 import API_ENW from "../../config/api.config";
 
 const instance = axios.create({
